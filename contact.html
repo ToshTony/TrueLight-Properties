@@ -149,40 +149,55 @@
             </div>
           </div>
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="#">
+            <form method="POST" action="contact_form.php">
               <div class="row">
+                <!-- Name Field -->
                 <div class="col-6 mb-3">
                   <input
                     type="text"
+                    name="name"
                     class="form-control"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
+            
+                <!-- Email Field -->
                 <div class="col-6 mb-3">
                   <input
                     type="email"
+                    name="email"
                     class="form-control"
                     placeholder="Your Email"
+                    required
                   />
                 </div>
-                <div class="col-12 mb-3">
+            
+                <!-- Phone Number Field -->
+                <div class="col-6 mb-3">
                   <input
                     type="text"
+                    name="phone_number"
                     class="form-control"
-                    placeholder="Subject"
+                    placeholder="Your Phone Number"
+                    required
                   />
                 </div>
+            
+                <!-- Message Field -->
                 <div class="col-12 mb-3">
                   <textarea
-                    name=""
+                    name="message"
                     id=""
                     cols="30"
                     rows="7"
                     class="form-control"
-                    placeholder="Message"
+                    placeholder="Your Message"
+                    required
                   ></textarea>
                 </div>
-
+            
+                <!-- Submit Button -->
                 <div class="col-12">
                   <input
                     type="submit"
@@ -191,7 +206,7 @@
                   />
                 </div>
               </div>
-            </form>
+            </form>            
           </div>
         </div>
       </div>

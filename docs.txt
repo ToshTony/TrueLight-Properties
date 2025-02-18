@@ -1,0 +1,18 @@
+Security Considerations:
+
+Sanitize Inputs: Always sanitize and escape user inputs to avoid SQL injection and cross-site scripting (XSS) attacks.
+
+Use mysqli_real_escape_string() or prepare statements for SQL queries.
+
+Use htmlspecialchars() when displaying user-generated content to prevent XSS.
+
+File Upload Security: If you are allowing file uploads, ensure you check the file type and size to prevent malicious files from being uploaded.
+
+
+
+Important Security Note:
+When allowing users to upload files, it is important to take extra steps to ensure security:
+
+Validate the file type: Ensure that only image files (e.g., JPG, PNG) are allowed to be uploaded.
+Sanitize the file name: Avoid using user input directly in the file name to prevent malicious file names from being executed.
+Check file size: Limit the file size to avoid large uploads that could affect server performance.
